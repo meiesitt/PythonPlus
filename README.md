@@ -9,3 +9,4 @@ We like to keep our code open so we can guarantee the safety of our library.
 
 ## 📃 Prerequisites
 As for the possible version of Python needed, each release has the version of Python used noted in the description of each release.
+The way Python works is slightly changed almost every version of Python, so to ensure your projects don't suddenly stop working when using Python+, we will try our best to use the newest versions of Python.
