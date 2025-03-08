@@ -21,7 +21,7 @@ class PythonPlus:
 
     def __init__(self, console_logs: bool = False):
         if not PythonPlus._initialized:
-            print("Python+ (v0.0.1) by @just_dingus#0")
+            print("Python+ (v0.0.2) by @just_dingus#0")
             PythonPlus._initialized = True
             PythonPlus._logging = console_logs
 
@@ -85,6 +85,34 @@ class PythonPlus:
             else:
                 raise RuntimeWarning("Python+ API Warning - one of args was empty")
             
+    class AskAlert:
+
+        def AskYesNo(title: str = "Python+ API Question", description: str = "Unspecified"):
+
+            """
+            Asks a question to the OS user with an UI prompt, specifically with Yes/No options
+
+            Args:
+                title (str): Text that will be displayed on the title section of the window.
+                description (str): Text that will be displayed on the content section of the window.
+
+            Returns:
+                True: If user clicks "Yes"
+                False: If user clicks "No"
+                None: If user manages to somehow cancel the question window
+
+            Raises:
+                RuntimeWarning: If `title` or `description` was nil or the question ask operation failed.
+            """
+
+            x = None
+            try:
+                x = tkinter.messagebox.askyesno(title=title, message=description)
+            except Exception as e:
+                raise RuntimeError(f"Ran into an error while using Python+ AskAlert API\nException: {e}")
+            else:
+                return x
+            
     ####################
     def wait(self, delay: int = 1):
 
@@ -95,7 +123,7 @@ class PythonPlus:
             delay (int): The number of seconds to delay the execution for. Must be greater than 0.
 
         Raises:
-            ValueError: If `delay` is not a positive integer.
+            ValueError: If `delay` is not a positi  ve integer.
         
         """
 
