@@ -1,52 +1,61 @@
-# Python+
-Python+ is an amazing library to put into your project for beginners. It contains multiple functions like `wait()` or `clear()`.
-Why do extra work if you can let Python+ do the heavylifting? Download the latest release and simply add the Python file to your project directory. Import it and enjoy!
+# Python+  
+Python+ is a beginner-friendly library designed to simplify coding. It includes useful functions like `wait()` and `clear()` to reduce repetitive tasks.  
+Why do extra work when Python+ can handle it for you? Simply download the latest release, add the Python file to your project directory, import it, and start coding!
 
-## 🎯 Our aim
-Python+ contains multiple useful functions, with newer additions being added frequently. Our aim is to help keep your code clean while also ensuring reliability. With good error handling, we can guarantee that you will not run into problems with our library.
-Additionally, Python+ is completely open-source, meaning you can happily view the source of `api.py` and discover how Python+ works.
-We like to keep our code open so we can guarantee the safety of our library.
+## 🎯 Our Goal  
+Python+ provides multiple useful functions, with frequent updates introducing new ones. Our goal is to help keep your code clean, efficient, and reliable. With built-in error handling, we ensure that you won't run into unexpected issues.  
 
-## 📃 Prerequisites
-As for the possible version of Python needed, each release has the version of Python used noted in the description of each release.
-The way Python works is slightly changed almost every version of Python, so to ensure your projects don't suddenly stop working when using Python+, we will try our best to use the newest versions of Python.
+Additionally, Python+ is **completely open-source**, meaning anyone can review the `api.py` file and understand how it works. Transparency is key to maintaining trust and security.  
 
-## 🔒 Safe Code
-I, as of writing this as the sole developer of Python+, will promise to you to use the best of my abilities when updating Python+. I will never include possibly malicious code, which can be checked by anyone. I apologize if the code is not readable, I rarely remember to include comments while working on code.
+## 📃 Prerequisites  
+Each release specifies the Python version it was tested with. Since Python evolves with each update, we strive to use the **latest stable version** to ensure compatibility with modern Python projects.  
 
-## 📕 Documented with docstrings
-All functions of Python+ are well documented with docstrings. Depending on the IDE you use, it should show when referencing a function.
+## 🔒 Safe & Transparent Code  
+As the sole developer of Python+ (for now), I promise to do my best when updating this library. **Python+ will never contain malicious code**—you are free to inspect the source yourself.  
 
-## ⬇ Get Python+
-You can get latest release of Python+ <a href="https://github.com/meiesitt/PythonPlus/releases">by clicking here.</a> You can choose release of your choice, noted with Python version.
+I apologize if parts of the code lack comments; I sometimes forget to add them while coding. However, I will improve documentation over time.  
 
-## ⚙ Source of Python+
-Alternatively, if you want to learn more about Python+ and its inner workings, you can <a href="https://github.com/meiesitt/PythonPlus/blob/main/api.py">click here to visit the api.py source.</a>
+## 📕 Fully Documented with Docstrings  
+Every function in Python+ includes **docstrings**, so your IDE will provide helpful information when you reference them.
 
-# ✅ How to use Python+
-## Step 1. Download Python+ API
-You can <a href="https://github.com/meiesitt/PythonPlus/blob/main/api.py">the latest release by clicking here.</a> This is automatically updated to include the latest version of Python+
+## ⬇ Get Python+  
+You can download the latest release of Python+ **[here](https://github.com/meiesitt/PythonPlus/releases)**. Each release includes the Python version it was tested with.
 
-## Step 2. Put the Python+ API file into your project directory
-Move the file into your project directory. You may name it as whatever you want.
+## ⚙ View the Source Code  
+Want to explore Python+'s inner workings? You can **[view the `api.py` source code here](https://github.com/meiesitt/PythonPlus/blob/main/api.py).**
 
-## Step 3. Reference it in your project
+---
+
+# ✅ How to Use Python+  
+## Step 1: Download Python+  
+**[Click here](https://github.com/meiesitt/PythonPlus/releases)** to download the latest release. The file will always be updated to the latest version of Python+.
+
+## Step 2: Add Python+ to Your Project  
+Move the downloaded file into your project directory. You can rename it if needed.
+
+## Step 3: Import Python+  
 ```py
 from api import PythonPlus
 ```
-⚠ Warning: If you have changed the name of the API file, also change the `api` bit in the above code. In Python, you can import any module or file by just referencing its actual file name. You can think of it as just putting the file name there but excluding the .py part of it.
+⚠ **Note:** If you renamed the file, update `api` in the import statement to match the new filename (excluding `.py`).  
 
-## Step 4. Make a Python+ Variable
-If you want to use the functions or methods inside Python+ API, you must first initialize the API. Here's how:
+## Step 4: Initialize Python+  
+To use Python+ functions, you need to **initialize** the library first:  
 ```py
 from api import PythonPlus
 
 PyPlus = PythonPlus()
 ```
-If you have done everything correctly, you should see a `Python+ (v0.0.2) by @just_dingus#0` line in the console. If so, PythonPlus has been initialized and is ready to be used in your project.
+If everything is set up correctly, you should see:  
+```
+Python+ (v0.0.2) by @just_dingus#0
+```
+This confirms that Python+ has been successfully initialized.
 
-# Example usage
-The below code asks the user if they think today is, for example, Monday.
+---
+
+# 📝 Example Usage  
+The following example asks the user if today is Monday:  
 ```py
 from api import PythonPlus
 PyPlus = PythonPlus()
@@ -54,9 +63,10 @@ PyPlus = PythonPlus()
 answer = PyPlus.AskAlert.AskYesNo("Question for you", "Is today Monday?")
 
 if answer:
-  print("User agrees that it may be Monday")
+    print("User agrees that it may be Monday")
 else:
-  print("User does not think that it's Monday.")
+    print("User does not think it's Monday.")
 ```
-Very simple, right?
-And ofcourse there are many more functions, being added frequently. Make sure to frequently check for updates.
+Pretty simple, right?  
+
+More functions are being added frequently, so be sure to **check for updates regularly**!
